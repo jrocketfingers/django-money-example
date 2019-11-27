@@ -15,3 +15,5 @@ class ExampleModelWithLaterAddedMoneyField(models.Model):
     """
     dummy_field = models.CharField(max_length=10)
     display = MoneyField(max_digits=20, decimal_places=4, null=True, default_currency=None)
+
+    another_nullable_field_but_without_default = MoneyField(max_digits=20, decimal_places=4, null=True)
